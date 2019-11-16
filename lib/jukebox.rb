@@ -51,16 +51,13 @@ end
 def run(array)
   puts "Please enter a command:"
   input=gets.strip
-
-  while input do
-    break if input == "exit"
-  end
-    elsif input == "list"
-      list(array)
-    elsif input == "help"
-      help
-    elsif input == "play"
-      play(array)
-    end
+  if input == "exit"
+    exit_jukebox
+  elsif input == "list"
+    list(array)
+  elsif input == "help"
+    help
+  elsif input == "play"
+    play(array)
   end
 end
