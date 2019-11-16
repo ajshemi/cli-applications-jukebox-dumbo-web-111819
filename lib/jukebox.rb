@@ -54,6 +54,7 @@ def run(array)
 
   while input do
     break if input == "exit"
+  end
     elsif input == "list"
       list(array)
     elsif input == "help"
